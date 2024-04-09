@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<div class="wrapper">
+    <header class="header" style="background-image: url(./img_project_fin/header_inner/background.png)">
+        <div class="container">
+            <div class="header__contacts">
+                <div class="header__contacts-1">
+                    <div class="header__contact">
+                        <img class="header__contact-imgF" src="./img_project_fin/header_inner/iconF.png">
+                        <span class="header__contact-text">Мы на Facebook</span>
+                        </div>
+                        <div class="header__contact">
+                            <img class="header__contact-imgI" src="./img_project_fin/header_inner/iconInst.png">
+                            <span class="header__contact-text">Наш Instagram</span>
+                        </div>
+                    </div>
+                <div class="header__contacts-2">
+                    <div class="header__number">
+                        +7 495 162-08-51
+                        <button class="header__button open-modal-btn">
+                            заказать звонок
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__inner">
+                <div class="header__inner-logo">
+                    <a class="header__inner-link" href="#">
+                        <img class="header__inner-img" src="./img_project_fin/header_inner/logo_dark 1.png">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#advantages-id">О КОМПАНИИ</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#support-id">НАШИ РЕШЕНИЯ</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#consultation-id">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                    <button class="menu__btn">
+                        <span class="menu__btn-span"></span>
+                        <span class="menu__btn-span"></span>
+                        <span class="menu__btn-span"></span>
+                    </button>
+                    <ul class="menu__mobile menu--open">
+                        <li class="menu__list-item link-mobile">
+                            <a class="menu__list-link" href="#advantages-id">О КОМПАНИИ</a>
+                        </li>
+                        <li class="menu__list-item link-mobile">
+                            <a class="menu__list-link" href="#support-id">НАШИ РЕШЕНИЯ</a>
+                        </li>
+                        <li class="menu__list-item link-mobile">
+                            <a class="menu__list-link" href="#consultation-id">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                    
+            </div>
+        
+            <div class="header__content">
+                <div class="header__content-inner">
+                    <h1 class="header__content-title">ВАШ <span style="color: #3CE800">ЛИЧНЫЙ CFO</span> НА СТРАЖЕ ВАШЕГО БИЗНЕСА</h1>
+                        <div class="header__content-texts">
+                            <p class="header__content-text">Как отследить финансовые потоки? Куда уходят средства?</p>
+                            <p class="header__content-text"> Почему постоянно кассовые разрывы? Где найти новые средства для инвестиций?</p> 
+                            <p class="header__content-text">Что делать с налоговой нагрузкой?</p>
+                        </div>
+                        <div class="header__content-button" >
+                        <button class="header__content-btn open-modal-btn" >
+                            Получить решение
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </header>
+
+<main class="main">
+    <section class="credits" id="credits-id">
+        <div class="container">
+            <div class="credits__inner">
+                <div class="credits__choice">
+                    <h1 class="credits__choice-title">Я хочу получить кредит</h1>
+                    <p class="credits__choice-text">Заполните форму</p>
+
+                    <form action="" class="credits__form">
+                        
+                        <label class="credits__form-label" for="credits"> Вид кредита*</label>
+                            <select id="credits" name="credits" onchange="handleCreditChange()">
+                                <option value="credit1">Кредит бизнесу</option>
+                                <option value="credit2">Кредит бизнесу</option>
+                                <option value="credit3">Кредит бизнесу</option>
+                            </select>
+                        
+                        <label class="credits__form-label" for="price"> Сумма кредита</label>
+                            <input class="credits__form-input" type="number" name="amountInput" min="0" max="2000000" value="0" step="50000" oninput="this.form.amountRange.value=this.value" />
+                            <input class="credits__form-range" type="range" name="amountRange" min="0" max="2000000" value="0" step="50000" oninput="this.form.amountInput.value=this.value" />
+                        
+                        
+                        <label class="credits__form-label" for="time"> Срок кредита</label>
+                            <input class="credits__form-input2" type="number" name="amountInput2" min="0" max="30" value="0" oninput="this.form.amountRange2.value=this.value" />
+                            <input class="credits__form-range2" type="range" name="amountRange2" min="0" max="30" value="0" oninput="this.form.amountInput2.value=this.value" />
+                        
+                    </form>
+                </div>
+                <div class="credits__partners">
+                    <div class="credits__partners-inner">
+                    <div class="credits__partners-title">
+                        Банки партнеры
+                    </div>
+                    <hr class="credits__hr">
+                    <div class="credits__partners-imgs">
+                        <img class="credits__partners-img1 credits__img" src="./img_project_fin/main_credits/0.svg">
+                        <img class="credits__partners-img2 credits__img" src="./img_project_fin/main_credits/1.svg">
+                        <img class="credits__partners-img3 credits__img" src="./img_project_fin/main_credits/2.svg">
+                        <img class="credits__partners-img4 credits__img" src="./img_project_fin/main_credits/3.svg">
+                        <img class="credits__partners-img5 credits__img" src="./img_project_fin/main_credits/4.svg">
+                        <img class="credits__partners-img6 credits__img" src="./img_project_fin/main_credits/5.svg">
+                    </div>
+                    <div class="credits__partners-text">
+                        и другие...
+                    </div>
+                    <div class="credits__partners-button">
+                        <button class="credits__partners-btn open-modal-btn" >
+                            заполнить заявку
+                        </button>
+                    </div>
+                    <div class="credits__partners-agree">
+                       Нажимая на кнопку, вы даете согласие на обработку <span class="credits__partners-agree-span"> персональных данных </span>
+                    </div>  
+                    </div>
+                </div>
+        </div>
+        <div class="credits__icon">
+            <img class="credits__icon-img" src="./img_project_fin/main_credits/icon.svg">
+        </div>
+    </section>
+    
+    <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+            <div class="modal__form">
+                <div class="modal__text">
+                    <h2 class="modal__text-title">отправьте заявку</h2>
+                    <p class="modal__text-p">Заполните форму</p>
+                </div>
+                <div class="modal__inputs" action="#" novalidate>
+                    <input class="modal__input" id="modal-name" type="text" name="name" value="" placeholder="ИМЯ*">
+                    <input class="modal__input" id="modal-tel" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                    <input class="modal__input" id="modal-email" type="email" name="email" pattern=".+@example\.com" size="30" value="" placeholder="Email" required>
+                    <input class="modal__input" id="modal-inn" type="text" name="inn" value="" placeholder="ИНН">
+                </div>
+                <button class="modal__btn"><a class="modal__btn-link" href="#">отправить заявку</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="my-modal-check">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn-check">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+            <div class="modal__form">
+                <div class="modal__img">
+                    <img class="modal__form-img" src="./img_project_fin/consultation/check-img.svg" alt="">
+                </div>
+                <div class="modal__text">
+                    <p class="modal__text-p">Спасибо, Ваш запрос отправлен</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="advantages" id="advantages-id">
+        <div class="container">
+        <h2 class="advantages__title">
+            преимущества работы с <span class="advantages__span">“НОВЫЕ БИЗНЕС СИСТЕМЫ”</span>
+        </h2>
+        <div class="advantages__blocks">
+            <div class="advantages__block">
+                <div class="advantages__block-icon">
+                    <img class="advantages__block-icon-img" src="./img_project_fin/main_advantages/0.svg">
+                </div>
+                <div class="advantages__block-title">
+                    Надежно
+                    <div class="advantages__block-text">
+                        <p class="advantages__block-text-p">Мы 13 лет работаем в сфере кредитования физических и юридических лиц</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__block">
+                <div class="advantages__block-icon">
+                    <img class="advantages__block-icon-img" src="./img_project_fin/main_advantages/1.svg">
+                </div>
+                <div class="advantages__block-title">
+                    выгодно
+                    <div class="advantages__block-text">
+                        <p class="advantages__block-text-p">Для вас снизим базовую ставку банка на 0,5 - 2% годовых</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__block">
+                <div class="advantages__block-icon">
+                    <img class="advantages__block-icon-img" src="./img_project_fin/main_advantages/2.svg">
+                </div>
+                <div class="advantages__block-title">
+                    быстро
+                    <div class="advantages__block-text">
+                        <p class="advantages__block-text-p">Заявки наших клиентов рассматриваются банком в приоритетном порядке</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__block">
+                <div class="advantages__block-icon">
+                    <img class="advantages__block-icon-img" src="./img_project_fin/main_advantages/3.svg">
+                </div>
+                <div class="advantages__block-title">
+                    профессионально
+                    <div class="advantages__block-text">
+                        <p class="advantages__block-text-p">Мы составим кредитную заявку и соберем пакет необходимых документов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__block">
+                <div class="advantages__block-icon">
+                    <img class="advantages__block-icon-img" src="./img_project_fin/main_advantages/4.svg">
+                </div>
+                <div class="advantages__block-title">
+                    удобно
+                    <div class="advantages__block-text">
+                        <p class="advantages__block-text-p">Вам не нужно ездить по банкам и стоять в очередях</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__block">
+                <div class="advantages__block-icon">
+                    <img class="advantages__block-icon-img" src="./img_project_fin/main_advantages/5.svg">
+                </div>
+                <div class="advantages__block-title">
+                    индивидуально
+                    <div class="advantages__block-text">
+                        <p class="advantages__block-text-p">Ваш персональный менеджер доступен ежедневно с 10 до 22:00</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="advantages__icon">
+            <img class="advantages__icon-img" src="./img_project_fin/main_credits/icon.svg">
+        </div>
+    </div>
+    </section>
+
+    <section class="stages" id="stages-id">
+        <div class="container">
+            <div class="stages__title">
+                этапы работы с нами
+            </div>
+            <div class="stages_blocks">
+                <div class="stages_block">
+                    <div class="stages_block-icon">
+                        <img class="stages_block-icon-img" src="./img_project_fin/main_stages/1.svg">
+                    </div>
+                    <div class="stages_block-title">
+                        <span class="stages_block-title-num">1.</span> Вы звоните нам
+                    </div>
+                    <div class="stages_block-text">
+                        <div class="stages_block-text-num">
+                            +7 (495) 740 99 11
+                        </div>
+                        <p class="stages_block-text-p"> с 10 до 22 без выходных или отправляете заявку</p>
+                    </div>
+                </div>
+                <img class="stages_block-union" src="./img_project_fin/main_stages/Union.svg">
+                <div class="stages_block">
+                    <div class="stages_block-icon">
+                        <img class="stages_block-icon-img" src="./img_project_fin/main_stages/2.svg">
+                    </div>
+                    <div class="stages_block-title">
+                        <span class="stages_block-title-num">2.</span> мы обсуждаем
+                    </div>
+                    <div class="stages_block-text">
+                        <p class="stages_block-text-p">с Вами все условия. Вы приезжаете к нам в офис или отправляете документы по email</p>
+                    </div>
+                </div>
+                <img class="stages_block-union" src="./img_project_fin/main_stages/Union.svg">
+                <div class="stages_block">
+                    <div class="stages_block-icon">
+                        <img class="stages_block-icon-img" src="./img_project_fin/main_stages/3.svg">
+                    </div>
+                    <div class="stages_block-title">
+                        <span class="stages_block-title-num">3.</span> мы оформляем
+                    </div>
+                    <div class="stages_block-text">
+                        <p class="stages_block-text-p">все документы и одобряем Вам в банке кредит. Вы приезжаете в банк на сделку и получаете деньги</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="consultation" id="consultation-id" style="background-image: url(./img_project_fin/consultation/back.png);">
+        <div class="container">
+            <div class="consultation__title">
+                бесплатная консультация
+            </div>
+            <div class="consultation__text">
+                Укажите ваши данные. Наш специалист свяжется с вами в течении 30 минут
+            </div>
+            <form class="consultation__forms" action="#" novalidate>
+                <div class="consultation__form">
+                    <input class="consultation__form-input" type="text" value="" placeholder="ИМЯ*">
+                </div> 
+                <div class="consultation__form">
+                    <input class="consultation__form-tel"  type="tel" name="phone" id="phone" placeholder="+7(___)___-__-__">
+                </div>
+                <div class="consultation__form">
+                    <input class="consultation__form-input" type="email" id="email" pattern=".+@example\.com" size="30" value="" placeholder="Email" required>
+                </div>
+            </form>
+            <button class="consultation__button open-modal-btn-check">
+                отправить
+            </button>
+        </div>
+    </section>
+
+<section class="support" id="support-id">
+    <div class="container">
+        <div class="support__title">
+            <h2 class="support__title-h2">
+                умеем решать сложности, при обращении в Банки
+            </h2> 
+        </div>
+        <div class="support__steps">
+            <div class="support__step">
+                <img class="support__step-img" src="./img_project_fin/steps/1.svg">
+                <div class="support__step-texts">
+                <div class="support__step-title">
+                    Менеджер банка охотно назначает встречу, открывает расчетный счет и ... пропадает
+                </div>
+                <hr class="support__step-hr">
+                <div class="support__step-text">
+                    Сотрудники банков-партнеров заинтересованы в одобрении заявок наших клиентов и уделяют им больше времени, чем другим заявкам. Они докладывают нам о работе с заявкой на кадом этапе.
+                </div>
+            </div>
+            </div>
+            <div class="support__step">
+                <img class="support__step-img" src="./img_project_fin/steps/2.svg">
+                <div class="support__step-texts">
+                <div class="support__step-title">
+                    Банк требует заполнить десятки форм, многие из которых даже не по вашему профилю работы
+                </div>
+                <hr class="support__step-hr">
+                <div class="support__step-text">
+                    Сотрудники банков-партнеров заинтересованы в одобрении заявок наших клиентов и уделяют им больше времени, чем другим заявкам. Они докладывают нам о работе с заявкой на кадом этапе.
+                </div>
+            </div>
+            </div>
+            <div class="support__step">
+                <img class="support__step-img" src="./img_project_fin/steps/3.svg">
+                <div class="support__step-texts">
+                <div class="support__step-title">
+                    Заманчивые предложения на сайте банка, а выясняется что нужно заложить имущество 
+                </div>
+                <hr class="support__step-hr">
+                <div class="support__step-text">
+                    Сотрудники банков-партнеров заинтересованы в одобрении заявок наших клиентов и уделяют им больше времени, чем другим заявкам. Они докладывают нам о работе с заявкой на кадом этапе.
+                </div>
+            </div>
+            </div>
+            <div class="support__step">
+                <img class="support__step-img" src="./img_project_fin/steps/4.svg">
+                <div class="support__step-texts">
+                <div class="support__step-title">
+                    Банк обещает расчет по управленке, но на деле использует только официальную отчетность
+                </div>
+                <hr class="support__step-hr">
+                <div class="support__step-text">
+                    Сотрудники банков-партнеров заинтересованы в одобрении заявок наших клиентов и уделяют им больше времени, чем другим заявкам. Они докладывают нам о работе с заявкой на кадом этапе.
+                </div>
+            </div>
+            </div>
+            <div class="support__step">
+                <img class="support__step-img" src="./img_project_fin/steps/5.svg">
+                <div class="support__step-texts">
+                <div class="support__step-title">
+                    Банк радостно берет заявку. Мучает сборм пакета документов. Потом отказывает без объяснения причин
+                </div>
+                <hr class="support__step-hr">
+                <div class="support__step-text">
+                    Сотрудники банков-партнеров заинтересованы в одобрении заявок наших клиентов и уделяют им больше времени, чем другим заявкам. Они докладывают нам о работе с заявкой на кадом этапе.
+                </div>
+            </div>
+            </div>
+            <div class="support__text">
+                К чему все эти трудности? Мы поможем секономить время и сделаем все возможное для получения вами кредита!
+                <div class="support__union">
+                    <img class="support__union-img" src="./img_project_fin/steps/union.svg">
+                </div>
+            </div>
+            
+        
+        </div>
+        <button class="support__button open-modal-btn">
+            получить кредит без сложностей
+        </button>
+        
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__information">
+            <div class="footer__about">
+                <div class="footer__about-logo">
+                    <img src="./img_project_fin/header_inner/logo_dark 1.png">
+                </div>
+                <div class="footer__about-text">
+                    Команда наших специалистов имеет огромный опыт работы с различными ситуациями. Мы обладаем широким набором различных инструментов для решения различных задача в сфере финансов, налогового права и экономической безопасности. Основная задача нашей 
+                    компании – быть максимально эффективными для Вашего бизнеса."
+                </div>
+            </div>
+            <div class="footer__buttons">
+                <button class="footer__button" style="width: 118px">
+                    О компании
+                </button>
+                <button class="footer__button" style="width: 96px">
+                    Новости
+                </button>
+                <button class="footer__button" style="width: 119px">
+                    Наши видео
+                </button>
+                <button class="footer__button" style="width: 213px">
+                    Открытие новой компании
+                </button>
+                <button class="footer__button" style="width: 265px">
+                    Финансовый директор на аутсорсе
+                </button>
+                <button class="footer__button" style="width: 282px">
+                    Финансовый анализ вашей компании
+                </button>
+                <button class="footer__button" style="width: 238px">
+                    Бухгалтерское сопровождение
+                </button>
+                <button class="footer__button" style="width: 165px">
+                    HR сопровождение
+                </button>
+                <button class="footer__button" style="width: 201px">
+                    Контактная информация
+                </button>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-title">
+                    Наши контакты
+                </div>
+                <div class="footer__contacts-number">
+                    +7 495 162-08-51
+                </div>
+                <div class="footer__contacts-adress">
+                    Москва, ул. Наметкина, дом 14, корпус 2, офис 910
+                </div>
+                <div class="footer__contacts-mail">
+                    Email: <a class="footer__contacts-mail-link" href="#">info@nbs-russia.ru</a>
+                </div>
+                <div class="footer__contacts-icons">
+                    <img class="footer__contacts-icon" src="">
+                    <img class="footer__contacts-icon" src="">
+                    <img class="footer__contacts-icon" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footer__hr">
+
+    <div class="container">
+        <div class="footer__nav">
+            <div class="footer__nav-more">
+                © 2020. <span style="color: #3ce800" >ООО «Новые Бизнес Системы»</span>, ИНН 7723452322, КПП 772501001, ОГРН 1167746558407
+            </div>
+            <div class="footer__nav-documents">
+                <div class="footer__nav-document">
+                    <a class="footer__nav-document-link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__nav-document">
+                    <a class="footer__nav-document-link">Типовой договор</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+</body>
+</html>
